@@ -25,5 +25,5 @@
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true
     },
-    "include": ["./src/index.d.ts"]
+    "include": ["src"]
   }
