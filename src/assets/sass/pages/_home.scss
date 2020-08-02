@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 0.5rem;
+    margin: auto auto 2rem;
 }
 
 .main-page-avatar img {
@@ -47,6 +48,7 @@
 .main-page-social {
     display: flex;
     justify-content: flex-end;
+    margin: 2rem 0;
 
     .twitter,
     .linkedin {
