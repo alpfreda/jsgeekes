@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/Me.jpg';
+import logo from './Me.jpg';
 
 export const Home: React.FC<{}> = () => (
   <main className="main-page">
