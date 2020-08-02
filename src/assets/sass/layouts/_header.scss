@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.primary-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.primary-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$logo-font-name: 'Raleway', sans-serif;
+
+$logo-symbol-size: 1.8rem;
+$logo-symbol-bg: #f7df1e;
+$logo-symbol-color: #333;
+$logo-symbol-font-size: 1.8rem;
+$logo-symbol-font-weight: 800;
+
+$logo-name-size: 1.5rem;
+
+$logo-family-size: 1.2rem;
+
+.logo {
+    font-family: $logo-font-name;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-symbol {
+    width: $logo-symbol-size;
+    height: $logo-symbol-size;
+    background-color: $logo-symbol-bg;
+    color: $logo-symbol-color;
+    font-size: $logo-symbol-font-size;
+    font-weight: $logo-symbol-font-weight;
+    margin-right: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-name {
+    font-size: $logo-name-size;
+}
+
+.menu-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav ul .menu-item {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.menu-nav ul .menu-item:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: $logo-symbol-bg;
+    transition: all .2s linear;
+    position: absolute;
+    bottom: -0.4rem;
+    left: auto;
+    right: 0;
+}
+.menu-nav ul .menu-item.active:before, .menu-nav ul .menu-item:hover:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}

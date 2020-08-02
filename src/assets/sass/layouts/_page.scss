@@ -1,0 +1,11 @@
+$container-padding-x: 1rem;
+$container-max-width: 55rem;
+
+.container {
+  max-width: $container-max-width;
+  margin: auto;
+  padding-right: $container-padding-x;
+  padding-left: $container-padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
