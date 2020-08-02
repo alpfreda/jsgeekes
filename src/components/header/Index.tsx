@@ -1,6 +1,6 @@
 import React from 'react';
-import { Logo } from "./logo";
-import { Menu } from './menu';
+import { Logo } from "./Logo";
+import { Menu } from './Menu';
 
 export const Header: React.FC<{}> = () => (
   <header className="primary-header">
