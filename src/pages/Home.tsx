@@ -1,12 +1,12 @@
 import React from 'react';
-import * as Me from '../assets/img/Me.jpg';
+const me =  require("../assets/img/Me.jpg")
 
 export const Home: React.FC<{}> = () => (
   <main className="main-page">
     <div className="container">
       <div className="main-page-inner">
         <div className="main-page-avatar">
-          <img src={Me} alt="Mehdi Akbarzadeh" />
+          <img src={me} alt="Mehdi Akbarzadeh" />
         </div>
         <div className="main-page-content">
           <h1 className="main-page-content-name">Mehdi Akbarzadeh</h1>
