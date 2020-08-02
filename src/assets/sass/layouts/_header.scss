@@ -13,15 +13,13 @@
 
 $logo-font-name: 'Raleway', sans-serif;
 
-$logo-symbol-size: 1.8rem;
+$logo-symbol-size: 3rem;
 $logo-symbol-bg: #f7df1e;
 $logo-symbol-color: #333;
-$logo-symbol-font-size: 1.8rem;
+$logo-symbol-font-size: 2.3rem;
 $logo-symbol-font-weight: 800;
 
-$logo-name-size: 1.5rem;
-
-$logo-family-size: 1.2rem;
+$logo-name-size: 2.5rem;
 
 .logo {
     font-family: $logo-font-name;
@@ -37,7 +35,7 @@ $logo-family-size: 1.2rem;
     color: $logo-symbol-color;
     font-size: $logo-symbol-font-size;
     font-weight: $logo-symbol-font-weight;
-    margin-right: 0.1rem;
+    margin-right: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +43,7 @@ $logo-family-size: 1.2rem;
 
 .logo-name {
     font-size: $logo-name-size;
+    font-weight: 100;
 }
 
 .menu-nav {
