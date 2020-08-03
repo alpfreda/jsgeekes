@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Menu: React.FC<{}> = () => (
+const Menu = () => (
     <nav className='menu-nav'>
         <ul>
             <li><a href="#" className="menu-item active">Home</a></li>
@@ -10,3 +10,5 @@ export const Menu: React.FC<{}> = () => (
         </ul>
     </nav>
 )
+
+export default Menu

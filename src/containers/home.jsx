@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './Me.jpg';
 
-export const Home: React.FC<{}> = () => (
+ const Home = () => (
   <main className="main-page">
     <div className="container">
       <div className="main-page-inner">
@@ -46,3 +46,5 @@ export const Home: React.FC<{}> = () => (
     </div>
   </main>
 );
+
+export default Home

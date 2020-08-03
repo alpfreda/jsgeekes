@@ -1,7 +1,7 @@
 // webpack.config.js
 const path = require('path')
 module.exports = {
-  entry: './src/Index.tsx',
+  entry: './src/Index.jsx',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ts)x?$/,
+        test: /\.(js)x?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -38,7 +38,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+    extensions: ['.jsx', '.js'],
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist')
