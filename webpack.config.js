@@ -1,7 +1,7 @@
 // webpack.config.js
 const path = require('path')
 module.exports = {
-  entry: './src/Index.jsx',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
@@ -41,6 +41,7 @@ module.exports = {
     extensions: ['.jsx', '.js'],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './dist')
+    contentBase: path.resolve(__dirname, './dist'),
+    historyApiFallback: true,
   },
 }

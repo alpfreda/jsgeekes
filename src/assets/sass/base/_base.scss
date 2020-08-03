@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
-$base-color: #353866;
+$base-color: #f7df1e;
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -9,7 +9,12 @@ body {
   line-height: normal;
   letter-spacing: normal;
   font-family: "Quicksand", sans-serif;
+  background: #1a2222;
   font-size: 1rem;
   font-weight: 400;
-  color: #7a7a7a;
+  color: #eee;
+}
+
+a {
+  color: $base-color;
 }

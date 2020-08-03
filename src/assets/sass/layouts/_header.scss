@@ -3,6 +3,8 @@
 .primary-header {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-bottom: 1px solid $base-color;
+    padding-bottom: 1rem;
 }
 
 .primary-header-inner {
@@ -14,7 +16,7 @@
 $logo-font-name: 'Raleway', sans-serif;
 
 $logo-symbol-size: 3rem;
-$logo-symbol-bg: #f7df1e;
+$logo-symbol-bg: $base-color;
 $logo-symbol-color: #333;
 $logo-symbol-font-size: 2.3rem;
 $logo-symbol-font-weight: 800;
@@ -59,6 +61,7 @@ $logo-name-size: 2.1rem;
 .menu-nav ul .menu-item {
     margin-left: 1rem;
     position: relative;
+    color:#fff
 }
 
 .menu-nav ul .menu-item:before {

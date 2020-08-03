@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+    line-height: 1;
+    padding-top: 1rem;
+    .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .twitter,
+    .github,
+    .linkedin {
+        margin: 0 0.2rem;
+    }
+}
