@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 import PrivateRoute from './routes/private-route'
 import PublicRoute from './routes/public-route'
 
+
 const Scroll = (props) => {
   React.useEffect(() => {
     window.scrollTo(0, 0)
