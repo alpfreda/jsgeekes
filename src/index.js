@@ -16,5 +16,5 @@ ReactDOM.render(
       <App />
     </PersistGate>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('app'),
 )
