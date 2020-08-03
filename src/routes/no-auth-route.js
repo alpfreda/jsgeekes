@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react'
 import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import Loader from '../components/loader'
 
 const NoAuthRoute = ({
   component: Component,
@@ -14,11 +13,9 @@ const NoAuthRoute = ({
       {...rest}
       render={(props) => {
         return (
-          <Suspense fallback={<Loader show />}>
-            <Layout>
-              <Component {...props} />
-            </Layout>
-          </Suspense>
+          <Layout>
+            <Component {...props} />
+          </Layout>
         )
       }}
     />

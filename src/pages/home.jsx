@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './Me.jpg';
+import { useDispatch, } from "react-redux";
+import { setActiveMenu } from "../redux/actions/navbar-action";
 
- const Home = () => (
-  <section className="main-page">
+const Home = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setActiveMenu('home'))
+  }, [])
+
+  return <section className="main-page" >
     <div className="container">
       <div className="main-page-inner">
         <div className="main-page-avatar">
@@ -18,6 +25,6 @@ import logo from './Me.jpg';
       </div>
     </div>
   </section>
-);
+}
 
 export default Home

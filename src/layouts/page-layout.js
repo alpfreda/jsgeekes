@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/header/index'
+import Header from '../containers/header'
 import Foooter from '../components/footer'
 
 const PageLayout = ({ children }) => {

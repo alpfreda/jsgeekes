@@ -1,8 +1,14 @@
-import React from 'react';
-import logo from './Me.jpg';
+import React, { useEffect } from 'react';
+import { useDispatch, } from "react-redux";
+import { setActiveMenu } from "../redux/actions/navbar-action";
 
-const Blog = () => (
-  <section className="blog-page">
+const Blog = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setActiveMenu('blog'))
+  }, [])
+
+  return <section className="blog-page">
     <div className="container">
       <div className="blog-page-inner">
         <h1 className="page-title">
@@ -27,6 +33,6 @@ const Blog = () => (
       </div>
     </div>
   </section>
-);
+}
 
 export default Blog

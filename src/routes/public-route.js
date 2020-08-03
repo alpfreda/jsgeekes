@@ -6,12 +6,11 @@ import PropTypes from 'prop-types';
 import NoAuthRoute from './no-auth-route';
 import PageLayout from '../layouts/page-layout';
 
-const Home = lazy(() => import('../pages/home'));
-const Blog = lazy(() => import('../pages/blog'));
+import Home from '../pages/home'
+import Blog from '../pages/blog'
 
 const PublicRoute = ({ match }) => {
   const { loggedIn } = useSelector((state) => state.auth);
-  console.log('why not come')
   return (
     <>
       <Switch>
