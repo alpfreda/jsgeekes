@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
-    "build": "webpack --mode production --progress --hide-modules"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
