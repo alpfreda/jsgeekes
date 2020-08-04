@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 .primary-header {
-    margin-top: 1rem;
+    padding-top: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid $base-color;
     padding-bottom: 1rem;
 }
 
@@ -18,7 +17,7 @@ $logo-font-name: 'Raleway', sans-serif;
 $logo-symbol-size: 3rem;
 $logo-symbol-bg: $base-color;
 $logo-symbol-color: #333;
-$logo-symbol-font-size: 2.3rem;
+$logo-symbol-font-size: 2rem;
 $logo-symbol-font-weight: 800;
 
 $logo-name-size: 2.1rem;
@@ -26,7 +25,7 @@ $logo-name-size: 2.1rem;
 .logo {
     font-family: $logo-font-name;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -39,13 +38,16 @@ $logo-name-size: 2.1rem;
     font-weight: $logo-symbol-font-weight;
     margin-right: 0.4rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-right: 0.2rem;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .logo-name {
     font-size: $logo-name-size;
     font-weight: 300;
+    font-style: italic;
+    color:#fff
 }
 
 .menu-nav {

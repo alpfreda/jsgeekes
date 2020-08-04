@@ -1,0 +1,22 @@
+@media(max-width:48rem){
+    .main-page-inner{
+        justify-content: center;
+    }
+
+    .primary-header-inner {
+        flex-direction: column;
+    }
+
+    .menu-nav {
+        margin: 2rem auto 0;
+    }
+
+    .main-page-content {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer .footer-inner{
+        justify-content: center;
+    }
+}

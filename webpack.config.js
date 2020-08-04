@@ -16,18 +16,16 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
+            'style-loader',
+            "css-loader",
+            "resolve-url-loader",
+            "sass-loader?sourceMap"
+        ]
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|webp)$/,
         use: {
           loader: "url-loader",
           options: {

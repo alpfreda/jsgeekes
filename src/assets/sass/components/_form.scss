@@ -1,0 +1,99 @@
+*:focus {
+    outline: none;
+}
+
+.form-input {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-input label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.form-input input,
+.form-input textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    left: 25px;
+    padding: 5px;
+    background: none;
+    color: #ccc;
+}
+
+.form-input input:valid ~ label,
+.form-input textarea:valid ~ label,
+.form-input input:focus ~ label,
+.form-input textarea:focus ~ label {
+    top: -20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.form-input input:focus ~ .inputBar:before,
+.form-input input:focus ~ .inputBar:after,
+.form-input textarea:focus ~ .inputBar:before,
+.form-input textarea:focus ~ .inputBar:after {
+    width: 50%;
+}
+
+.form-input textarea {
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+    resize: none;
+}
+
+.form-input .inputBar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.form-input .inputBar:before,
+.form-input .inputBar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    background: $base-color;
+    height: 2px;
+    transition: all 0.2s ease;
+}
+
+.form-input .inputBar:after {
+    right: 50%;
+}
+
+.form-input .inputBar:before {
+    left: 50%;
+}
+
+button {
+    background-color: $base-color;
+    border: none;
+    padding: 1rem;
+    margin: 0;
+    min-width: 10rem;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 0.3rem;
+    box-shadow: 0 3px 3px #3c3c3cc7;
+    position: relative;
+    transition: 0.3 ease-in-out all;
+    cursor: pointer;
+}
+
+button:hover {
+    background: lighten($base-color, 20%);
+}

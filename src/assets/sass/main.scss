@@ -14,6 +14,7 @@
 @import 'components/nav';
 @import 'components/tabs';
 @import 'components/loaders';
+@import 'components/form';
 
 // layout
 @import 'layouts/footer';
@@ -24,6 +25,9 @@
 // pages
 @import 'pages/home';
 @import 'pages/page';
+@import 'pages/contact';
+
+@import 'layouts/responsive';
 
 // themes
 @import 'themes/default';

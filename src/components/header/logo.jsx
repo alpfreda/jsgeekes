@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Logo = () => (
-    <div className='logo'>
+    <Link to='/' className='logo'>
         <span className='logo-symbol'>JS</span>
         <span className='logo-name'>Geek</span>
-    </div>
+    </Link>
 )
 
 export default Logo

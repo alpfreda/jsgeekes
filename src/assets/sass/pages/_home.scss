@@ -3,13 +3,12 @@
     flex-wrap: wrap;
     min-height: 28rem;
     align-items: center;
-    justify-content: center;
 }
 
 .main-page-avatar {
     position: relative;
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     background-color: #fff;
     border-radius: 100%;
     border: 0.2rem solid $base-color;
@@ -29,7 +28,7 @@
 }
 
 .main-page-content {
-    width: 35rem;
+    width: 33rem;
     margin-left: 2rem;
 }
 

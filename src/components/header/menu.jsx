@@ -7,7 +7,7 @@ const Menu = ({ activeMenu }) => (
             <li><Link to="/" className={`menu-item ${checkActive(activeMenu, 'home')}`}>Home</Link></li>
             <li><a href="#" className={`menu-item ${checkActive(activeMenu, 'resume')}`}>Resume</a></li>
             <li><Link to="/blog" className={`menu-item ${checkActive(activeMenu, 'blog')}`}>Blog</Link></li>
-            <li><a href="#" className={`menu-item ${checkActive(activeMenu, 'contact')}`}>Contact</a></li>
+            <li><Link to="/contact" className={`menu-item ${checkActive(activeMenu, 'contact')}`}>Contact</Link></li>
         </ul>
     </nav>
 )

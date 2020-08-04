@@ -23,7 +23,7 @@ const NoAuthRoute = ({
 }
 
 NoAuthRoute.propTypes = {
-  component: PropTypes.object.isRequired,
+  component: PropTypes.func.isRequired,
   isAuthenticated: PropTypes.bool.isRequired,
   layout: PropTypes.func.isRequired,
   location: PropTypes.object,

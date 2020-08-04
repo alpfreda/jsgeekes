@@ -1,6 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 $base-color: #f7df1e;
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #333;
+  background: $base-color;
+}
+
+::selection {
+  color: #333;
+  background: $base-color;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #333;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7df1e;
+  border-radius: 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -13,8 +40,32 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #eee;
+  &:before {
+    content: "";
+    background-image: url("../../img/bg.webp");
+    background-size: 300px;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.8;
+  }
+}
+button,
+input,
+textarea {
+  font-family: "Quicksand", sans-serif;
 }
 
+#app {
+  position: relative;
+}
 a {
   color: $base-color;
+}
+
+.text-right {
+  text-align: right;
 }

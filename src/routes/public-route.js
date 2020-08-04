@@ -8,6 +8,7 @@ import PageLayout from '../layouts/page-layout';
 
 import Home from '../pages/home'
 import Blog from '../pages/blog'
+import Contact from '../pages/contact'
 
 const PublicRoute = ({ match }) => {
   const { loggedIn } = useSelector((state) => state.auth);
@@ -28,6 +29,14 @@ const PublicRoute = ({ match }) => {
           isAuthenticated={loggedIn}
           layout={PageLayout}
           component={Blog}
+        />
+
+        <NoAuthRoute
+          exact
+          path={'/contact'}
+          isAuthenticated={loggedIn}
+          layout={PageLayout}
+          component={Contact}
         />
       </Switch>
     </>

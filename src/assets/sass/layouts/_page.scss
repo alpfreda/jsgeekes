@@ -1,15 +1,25 @@
 .blog {
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    border-radius: 1rem;
+    &:hover {
+        background: $base-color;
+        color: #555;
+        a {
+            color: #333;
+        }
+    }
+
     &:last-child {
         border-bottom: 0;
     }
     .blog-title {
         font-size: 1.2rem;
-        color: #fff;
     }
     .blog-time {
-        color: #aaa;
+        color: #777;
     }
     .blog-info {
         margin-top: 0.4rem;
