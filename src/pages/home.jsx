@@ -19,7 +19,7 @@ const Home = () => {
           <h1 className="main-page-content-name">Mehdi Akbarzadeh</h1>
           <h3 className="main-page-content-title">Web Developer</h3>
           <p className="main-page-content-info">
-            Front end developer live in Istanbul, experience in application development with React, Redux, Jquery, css3, Sass end etc.
+            Front end developer live in the Istanbul, experience in application development with React, Redux, Jquery, css3, Sass end etc.
           </p>
         </div>
       </div>
