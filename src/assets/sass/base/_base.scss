@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
 $base-color: #f7df1e;
 
 ::-moz-selection {
@@ -35,15 +35,16 @@ img {
 body {
   line-height: normal;
   letter-spacing: normal;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Nunito', sans-serif;
   background: #1a2222;
   font-size: 1rem;
   font-weight: 400;
   color: #eee;
-  &:before {
+  &:before,
+  &:after {
     content: "";
-    background-image: url("../../img/bg.webp");
-    background-size: 300px;
+    background-image: url("../../img/bg-1.png");
+    background-size: 50%;
     opacity: 0.5;
     position: fixed;
     left: 0;
@@ -52,7 +53,11 @@ body {
     top: 0;
     opacity: 0.8;
   }
+  &:after {
+    background-image: url("../../img/bg-2.png");
+  }
 }
+
 button,
 input,
 textarea {
@@ -61,6 +66,7 @@ textarea {
 
 #app {
   position: relative;
+  z-index: 1;
 }
 a {
   color: $base-color;
