@@ -1,6 +1,10 @@
-.resume-page .page-title {
-    &:after {
-        content: "Resume";
+.resume-page {
+    animation: fadeInFromNone 1.5s ease-out;
+
+    .page-title {
+        &:after {
+            content: "Resume";
+        }
     }
 }
 

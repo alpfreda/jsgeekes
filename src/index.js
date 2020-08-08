@@ -12,7 +12,7 @@ import './assets/sass/main.scss'
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={<Loader />} persistor={persistor}>
+    <PersistGate loading={<Loader />} persistor={persistor} onBeforeLift={() => new Promise(resolve => setTimeout(resolve, 2000))}>
       <App />
     </PersistGate>
   </Provider>,
