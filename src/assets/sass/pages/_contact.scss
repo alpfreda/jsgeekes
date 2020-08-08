@@ -7,6 +7,9 @@
     font-weight: 100;
 }
 
-.contact-page .page-title{
+.contact-page .page-title {
     margin-bottom: 0;
+    &:after {
+        content: "Contact Me";
+    }
 }

@@ -1,5 +1,5 @@
-@media(max-width:48rem){
-    .main-page-inner{
+@media (max-width: 48rem) {
+    .main-page-inner {
         justify-content: center;
     }
 
@@ -16,7 +16,12 @@
         text-align: center;
         margin-left: 0;
     }
-    .footer .footer-inner{
+
+    .footer .footer-inner {
         justify-content: center;
+    }
+
+    .resume-sidebar{
+        display: none;
     }
 }

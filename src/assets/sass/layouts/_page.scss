@@ -1,12 +1,13 @@
 .blog {
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
     transition: 0.4s all ease-in-out;
     cursor: pointer;
     border-radius: 1rem;
     &:hover {
         background: $base-color;
         color: #555;
+        padding: 1rem;
         a {
             color: #333;
         }
@@ -27,8 +28,8 @@
 }
 
 .page-title {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
     position: relative;
     padding-left: 1.4rem;
     color: #ffff;
@@ -42,5 +43,14 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &:after{
+        content: "Blog";
+        position: absolute;
+        border-radius: 100%;
+        font-size: 4rem;
+        font-weight: 700;
+        opacity: 0.15;
+        left:0
     }
 }
