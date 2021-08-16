@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Logo = () => (
     <Link to='/' className='logo'>
-        <span className='logo-symbol'>JS</span>
-        <span className='logo-name'>Geek</span>
+        <span className='logo-symbol'>Alp</span>
+        <span className='logo-name'>Freda</span>
     </Link>
 )
 
